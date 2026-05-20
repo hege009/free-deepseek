@@ -8,9 +8,9 @@ WORKDIR /app
 COPY --from=builder /app/ds2api .
 COPY config.example.json config.json
 
-# Render 会自动传入 PORT 变量，我们直接用它
+# Render 会自动传入 PORT 变量
 ENV PORT=5001
-EXPOSE \
+EXPOSE 5001
 
 # 启动时监听动态端口
-CMD ["./ds2api", "--port", "\"]
+CMD ["./ds2api", "--port", ""]
