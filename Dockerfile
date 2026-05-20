@@ -13,4 +13,4 @@ ENV PORT=5001
 EXPOSE 5001
 
 # 启动时监听动态端口
-CMD ["./ds2api", "--port", ""]
+CMD ["./ds2api", "--port", "$PORT"]
